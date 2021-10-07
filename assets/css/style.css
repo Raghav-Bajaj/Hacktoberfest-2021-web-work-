@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
 
+body {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +13,7 @@
   font-family: "Ubuntu", sans-serif;
 }
 .wrapper {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
 }
 img {
@@ -18,7 +23,7 @@ img {
   object-fit: cover;
 }
 .nav {
-  max-width: 1000px;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
   position: fixed;
@@ -52,32 +57,32 @@ img {
   text-decoration: none;
   color: inherit;
   text-transform: uppercase;
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 .nav__link::after {
-    transition: 0.3s;
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: black;
-    bottom: 0;
-    left: -100%;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: black;
+  bottom: 0;
+  left: -100%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 .nav__icon {
-    padding-right: 5px;
+  padding-right: 5px;
 }
 .nav__link:hover {
   box-sizing: border-box;
   background: rgb(233, 233, 233);
 }
 .nav__link:hover::after {
-    left: 0;
+  left: 0;
 }
 
 .section {
@@ -94,12 +99,80 @@ img {
 .section:nth-child(even) {
   background: rgb(231, 231, 231);
 }
-.footer {
-  height: 10vh;
-  width: 100%;
+
+/* footer */
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(245, 245, 245);
-  border-top: 1px solid black;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+li {
+  text-align: justify;
+}
+.footer {
+  background-color: #02091a;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
 }
