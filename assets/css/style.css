@@ -93,9 +93,22 @@ img {
 .section {
   height: 100vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+  padding: 36vh 5em;
+}
+
+.section h2{
+    color: #b53a25;
+}
+
+.section p{
+  color: #2b3531;
+  width: 80%;
+  margin: auto;
+  margin-top: 1.5em;
 }
 
 .section:nth-child(odd) {
