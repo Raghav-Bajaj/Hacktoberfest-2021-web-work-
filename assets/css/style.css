@@ -188,6 +188,16 @@ li {
     width: 50%;
     margin-bottom: 30px;
   }
+
+  .section{
+    padding: 16vh 1em;
+  }
+
+  .section p {
+    width: 100%;
+    margin-top: 1em;
+    font-size: 15px;
+  }
 }
 @media (max-width: 574px) {
   .footer-col {
